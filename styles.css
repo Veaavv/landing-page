@@ -13,16 +13,14 @@ img {
 .container {
     height: 100vh;
     display: flex;
-    border: 2px red solid;
     flex-direction: column;
 }
 /* header content starts here */
 .header {
     background-color: #141c26;
-    border: 2px red solid;
     display: flex;
     color: #fff;
-    padding: 8px;
+    padding: 16px;
     align-items: center;
     justify-content: space-between;
 }
@@ -45,16 +43,14 @@ img {
 }
 /* hero content start here */
 .hero {
-    border: 2px solid red;
     background-color: #1F2937;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 12px;
+    padding: 48px;
 }
 
 .hero-container {
-    border: 2px solid red;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -68,7 +64,7 @@ img {
 }
 
 .secondary-text {
-    font-weight: 18px;
+    font-size: 18px;
     width: 600px;
     color: #E5E7EB;
 }
@@ -86,14 +82,13 @@ img {
     font-weight: 600;
     color: #F9FAF8;
 }
-
+/* members cards start here */
 .hero-info {
-    border: 2px red solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .info {
@@ -101,21 +96,20 @@ img {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    text-align: center;
 }
 
 .cards {
-    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     gap: 16px;
 }
 
 .members {
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     flex: 1 1 auto;
     gap: 8px;
@@ -132,6 +126,81 @@ img {
 .member-img {
     border: 5px solid #24a0ed;
     border-radius: 5px;
-    width: 100px;
+    width: 150px;
+    flex-grow: 0;
+}
+/* call to action */
+.inspo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #E5E7EB;
+    gap: 32px;
+    flex-direction: column;
+    padding: 64px 0;
+    margin: 32px 0;
     flex-grow: 1;
+}
+
+.inspo-quote {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 25px;
+    color: #1F2937;
+}
+
+.inspo-quoter {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1F2937;
+    align-self:self-end;
+    margin-right: 512px;
+}
+
+.call-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #3882F6;
+    flex-direction: row;
+    padding: 48px 64px;;
+    margin: 32px 0;
+    border-radius: 8px;
+    gap: 8px;
+    width: 800px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 32px;
+}
+
+.call-main-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.call-secondary-text {
+    color: #fff;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+#button {
+    padding: 10px 40px;
+    border: solid 2px white;
+    background-color: #3882F6;
+    border-radius: 12px;
+}
+/* footer content */
+.footer {
+    background-color: #141c26;
+    display: flex;
+    color: #fff;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
 }
